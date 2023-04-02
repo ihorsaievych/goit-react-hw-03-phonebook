@@ -6,6 +6,6 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    up
+    up 2
   </React.StrictMode>
 );

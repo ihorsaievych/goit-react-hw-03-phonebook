@@ -14,6 +14,7 @@ export class App extends Component {
     filter: '',
   };
 
+  //mount
   componentDidMount() {
     const contacts =
       JSON.parse(localStorage.getItem(LOCAL_KEY)) ?? this.state.contacts;
@@ -21,6 +22,7 @@ export class App extends Component {
     this.setState(() => ({ contacts }));
     localStorage.setItem(LOCAL_KEY, JSON.stringify(contacts));
   }
+  //update
   componentDidUpdate(_, prevState) {
     if (this.state.contacts === prevState.contacts) return;
 
